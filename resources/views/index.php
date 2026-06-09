@@ -19,7 +19,7 @@
                 <path d="M35 10 L55 20 L55 40 Q35 60 15 40 L15 20 Z" fill="#FFFFFF" />
                 <polyline points="20,35 28,28 35,32 45,22" fill="none" stroke="#06B6D4" stroke-width="2" />
                 <text x="70" y="40" font-family="Montserrat" font-size="22" fill="#FFFFFF" font-weight="600">
-                    Thermo_Predict
+                    ThermoPredict
                 </text>
             </svg>
         </div>
@@ -118,7 +118,7 @@
                 <h3>Monitoramento Inteligente de Vacinas</h3>
 
                 <p>
-                    O <strong>Thermo_Predict</strong> é um sistema inteligente desenvolvido para o monitoramento e
+                    O <strong>ThermoPredict</strong> é um sistema inteligente desenvolvido para o monitoramento e
                     previsão de risco na conservação de vacinas termolábeis. A solução utiliza tecnologias de
                     Internet das Coisas (IoT) para acompanhar continuamente a temperatura interna e o estado
                     de abertura da porta de equipamentos de armazenamento.
@@ -131,7 +131,7 @@
 
                     <br><br>
 
-                    Com isso, o Thermo_Predict contribui para a redução de desperdícios, aumento da segurança
+                    Com isso, o ThermoPredict contribui para a redução de desperdícios, aumento da segurança
                     na cadeia fria e maior eficiência nos processos de imunização.
                 </p>
 
@@ -152,7 +152,7 @@
 
         <div class="subtitulo">
             <p>
-                O <strong>Thermo_Predict</strong> desenvolveu uma solução inovadora para o monitoramento de vacinas termolábeis,
+                O <strong>ThermoPredict</strong> desenvolveu uma solução inovadora para o monitoramento de vacinas termolábeis,
                 utilizando tecnologia de ponta para garantir a segurança e eficácia das vacinas durante o armazenamento. O sistema é
                 desenvolvido para monitorar continuamente as condições de armazenamento de vacinas termolábeis,
                 integrando sensores, processamento de dados e análise preditiva para identificar riscos,
@@ -225,7 +225,7 @@
         </div>
         <div class="subtitulo">
             <p>
-                O Thermo_Predict é fruto do trabalho de uma equipe comprometida com a inovação e a segurança no
+                O ThermoPredict é fruto do trabalho de uma equipe comprometida com a inovação e a segurança no
                 armazenamento de vacinas termolábeis. Unindo conhecimento técnico e visão estratégica, desenvolvemos uma
                 solução capaz de realizar monitoramento contínuo e análise de riscos em tempo real.
             </p>
@@ -303,7 +303,7 @@
         </div>
         <div class="subtitulo">
             <p>
-                Entre em contato conosco para saber mais sobre como o Thermo_Predict pode transformar a gestão de
+                Entre em contato conosco para saber mais sobre como o ThermoPredict pode transformar a gestão de
                 energia da sua empresa. <strong>Estamos prontos para ajudar você a alcançar eficiência e sustentabilidade.</strong>
             </p>
         </div>
@@ -327,7 +327,7 @@
 
     <!-- RODAPÉ  -->
     <footer>
-        <p>© 2026 Thermo_Predict — Inovação e tecnologia a serviço da saúde.</p>
+        <p>© 2026 ThermoPredict — Inovação e tecnologia a serviço da saúde.</p>
     </footer>
 
 </body>
