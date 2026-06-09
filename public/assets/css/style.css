@@ -728,3 +728,95 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 0 20px;
+        height: 70px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        min-height: calc(100vh - 70px);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 28px;
+    }
+
+    /* SEÇÕES */
+    section {
+        padding: 60px 20px;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+
+    /* PROJETO (LADO A LADO → VERTICAL) */
+    .container-projeto {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .texto-projeto h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .texto-projeto p {
+        text-align: center;
+    }
+
+    /* IMAGEM */
+    .imagem-projeto img {
+        max-width: 100%;
+    }
+
+    /* CARDS */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* EQUIPE */
+    .card-membro {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .card-membro img {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .card-membro .info {
+        min-width: auto;
+    }
+
+    /* FORM */
+    form {
+        padding: 25px 20px;
+    }
+
+}
+
