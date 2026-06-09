@@ -733,90 +733,333 @@ html {
    RESPONSIVIDADE
 ========================= */
 
-@media (max-width: 768px) {
+/* =========================
+   TABLETS E TELAS MÉDIAS
+========================= */
+@media (max-width: 1024px) {
 
-    /* HEADER */
     header {
-        padding: 0 20px;
-        height: 70px;
+        padding: 0 24px;
     }
 
     nav {
-        gap: 15px;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .container-projeto {
+        gap: 50px;
+        padding: 0 24px;
+    }
+
+    .texto-projeto h2 {
+        font-size: 36px;
+    }
+
+    .card-membro {
+        max-width: 620px;
+    }
+
+    .card-membro img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* =========================
+   CELULARES E TABLETS PEQUENOS
+========================= */
+@media (max-width: 768px) {
+
+    /* Impede rolagem lateral no celular */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header fica em coluna no celular */
+    header {
+        height: auto;
+        min-height: 80px;
+        padding: 12px 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Logo menor no celular */
+    .logo svg {
+        height: 50px;
+    }
+
+    /* Menu quebra linha para caber na tela */
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
     }
 
     nav a {
         font-size: 14px;
+        height: auto;
     }
 
-    /* HERO */
+    /* Centraliza o dropdown no celular */
+    .menu-projeto {
+        justify-content: center;
+    }
+
+    .dropdown {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        z-index: 1001;
+    }
+
+    .dropdown a {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    /* Compensa o header fixo maior no celular */
     .hero {
-        height: auto;
-        min-height: calc(100vh - 70px);
-        padding: 40px 20px;
+        margin-top: 125px;
+        height: calc(100vh - 125px);
+        min-height: 520px;
+    }
+
+    .hero-conteudo {
+        padding: 20px;
+    }
+
+    /* Reduz espaçamento das seções */
+    .problema-detalhado,
+    .projeto-detalhado,
+    .solucao-detalhado,
+    .sobrenos-detalhado,
+    .contato-detalhado {
+        padding: 70px 18px;
+    }
+
+    /* Diminui os títulos principais */
+    .topo-problema h2,
+    .topo-projeto h2,
+    .topo-solucao h2,
+    .topo-sobrenos h2,
+    .topo-contato h2 {
+        font-size: 30px;
+    }
+
+    /* Ajusta subtítulos */
+    .subtitulo {
+        max-width: 100%;
+        margin: 18px auto 36px auto;
+    }
+
+    .subtitulo p {
+        font-size: 15px;
         text-align: center;
     }
 
-    .hero-conteudo h1 {
-        font-size: 28px;
+    /* Cards ficam um por linha */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 420px;
     }
 
-    /* SEÇÕES */
-    section {
-        padding: 60px 20px;
+    .card {
+        min-height: 140px;
+        padding: 20px;
+        font-size: 14px;
     }
 
-    h2 {
-        font-size: 26px !important;
-    }
-
-    /* PROJETO (LADO A LADO → VERTICAL) */
+    /* Projeto sai do lado a lado e vira coluna */
     .container-projeto {
         flex-direction: column;
-        gap: 30px;
-        padding: 0 20px;
+        gap: 32px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .texto-projeto {
+        margin-right: 0;
+        width: 100%;
     }
 
     .texto-projeto h2 {
-        font-size: 28px;
-        text-align: center;
+        font-size: 32px;
+    }
+
+    .texto-projeto h3 {
+        font-size: 19px;
     }
 
     .texto-projeto p {
+        font-size: 15px;
         text-align: center;
     }
 
-    /* IMAGEM */
+    .imagem-projeto {
+        width: 100%;
+        justify-content: center;
+    }
+
     .imagem-projeto img {
         max-width: 100%;
+        border-radius: 14px;
     }
 
-    /* CARDS */
-    .cards {
-        grid-template-columns: 1fr;
+    /* Cards da equipe ficam em coluna */
+    .cards-equipe {
+        gap: 24px;
     }
 
-    /* EQUIPE */
     .card-membro {
         flex-direction: column;
+        gap: 18px;
+        max-width: 420px;
+        padding: 18px;
         text-align: center;
-        gap: 15px;
     }
 
     .card-membro img {
         width: 100%;
+        max-width: 280px;
         height: auto;
-        max-width: 250px;
+        aspect-ratio: 1 / 1;
+        min-width: 0;
     }
 
     .card-membro .info {
-        min-width: auto;
+        min-width: 0;
+        width: 100%;
+        align-items: center;
     }
 
-    /* FORM */
+    .card-membro h4 {
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    .card-membro p {
+        font-size: 14px;
+    }
+
+    /* Formulário adaptado ao celular */
     form {
-        padding: 25px 20px;
+        max-width: 100%;
+        margin: -25px 18px 70px 18px;
+        padding: 28px 22px;
     }
 
+    form input,
+    form textarea {
+        font-size: 14px;
+        padding: 13px 14px;
+    }
+
+    /* Botões ficam um embaixo do outro */
+    form button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    form button + button {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 26px 18px;
+        font-size: 14px;
+    }
+
+    html {
+        scroll-padding-top: 125px;
+    }
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 14px;
+    }
+
+    .logo svg {
+        height: 44px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        margin-top: 120px;
+        height: calc(100vh - 120px);
+        min-height: 480px;
+    }
+
+    .topo-problema h2,
+    .topo-projeto h2,
+    .topo-solucao h2,
+    .topo-sobrenos h2,
+    .topo-contato h2 {
+        font-size: 26px;
+    }
+
+    .texto-projeto h2 {
+        font-size: 28px;
+    }
+
+    .texto-projeto h3 {
+        font-size: 17px;
+    }
+
+    .subtitulo p,
+    .texto-projeto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .problema-detalhado,
+    .projeto-detalhado,
+    .solucao-detalhado,
+    .sobrenos-detalhado,
+    .contato-detalhado {
+        padding: 60px 14px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card-membro {
+        max-width: 100%;
+    }
+
+    form {
+        margin: -20px 14px 60px 14px;
+        padding: 24px 18px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    html {
+        scroll-padding-top: 120px;
+    }
 }
 
